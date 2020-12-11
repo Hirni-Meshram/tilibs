@@ -31,6 +31,16 @@ matrix:
       env: PREBUILDER=autotools BUILDER=make
       <<: *_linuxpackages
     - os: linux
+      arch: arm64
+      dist: xenial
+      env: PREBUILDER=autotools BUILDER=make
+      <<: *_linuxpackages
+    - os: linux
+      arch: arm64-graviton2
+      dist: xenial
+      env: PREBUILDER=autotools BUILDER=make
+      <<: *_linuxpackages
+    - os: linux
       arch: amd64
       dist: xenial
       env: PREBUILDER=cmake     BUILDER=make
