@@ -37,7 +37,9 @@ matrix:
       <<: *_linuxpackages
     - os: linux
       arch: arm64-graviton2
-      dist: xenial
+      dist: focal
+      group: edge
+      virt: lxd
       env: PREBUILDER=autotools BUILDER=make
       <<: *_linuxpackages
     - os: linux
